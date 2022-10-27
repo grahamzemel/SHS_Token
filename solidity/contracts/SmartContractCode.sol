@@ -116,11 +116,11 @@ contract SHS_Token is StandardToken {
 
     function SHS_Token(
         ) {
-        balances[msg.sender] = 10000;               // Give the creator all initial tokens (100000 for example)
-        totalSupply = 10000;                        // Update total supply (100000 for example)
+        balances[msg.sender] = 10000000000000000000000;               // Give the creator all initial tokens (100000 for example)
+        totalSupply = 10000000000000000000000;                        // Update total supply (100000 for example)
         name = "SHS Token";                                   // Set the name for display purposes
         decimals = 18;                            // Amount of decimals for display purposes
-        symbol = "SHS";                               // Set the symbol for display purposes
+        symbol = "SHS";                              // Set the symbol for display purposes
     }
 
     /* Approves and then calls the receiving contract */
@@ -135,3 +135,4 @@ contract SHS_Token is StandardToken {
         return true;
     }
 }
+
