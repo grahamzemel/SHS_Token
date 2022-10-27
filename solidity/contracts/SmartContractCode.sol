@@ -88,7 +88,7 @@ contract StandardToken is Token {
 
 
 //name this contract whatever you'd like
-contract Robot is StandardToken {
+contract SHS_Token is StandardToken {
 
     function () {
         //if ether is sent to this address, send it back.
@@ -114,13 +114,13 @@ contract Robot is StandardToken {
 
 //make sure this function name matches the contract name above. So if you're token is called TutorialToken, make sure the //contract name above is also TutorialToken instead of ERC20Token
 
-    function Robot(
+    function SHS_Token(
         ) {
-        balances[msg.sender] = 100000000000000000000000000;               // Give the creator all initial tokens (100000 for example)
-        totalSupply = 100000000000000000000000000;                        // Update total supply (100000 for example)
-        name = "Robot";                                   // Set the name for display purposes
+        balances[msg.sender] = 10000;               // Give the creator all initial tokens (100000 for example)
+        totalSupply = 10000;                        // Update total supply (100000 for example)
+        name = "SHS Token";                                   // Set the name for display purposes
         decimals = 18;                            // Amount of decimals for display purposes
-        symbol = "RBT";                               // Set the symbol for display purposes
+        symbol = "SHS";                               // Set the symbol for display purposes
     }
 
     /* Approves and then calls the receiving contract */
